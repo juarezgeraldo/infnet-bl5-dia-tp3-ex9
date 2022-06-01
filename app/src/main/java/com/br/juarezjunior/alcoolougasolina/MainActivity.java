@@ -40,25 +40,7 @@ public class MainActivity extends AppCompatActivity {
         }else{
             resultado.setText("Preencha todos os campos");
         }
-
-
-/*        if (precoAlcool.getText().toString() != "") {
-            if (precoGasolina.getText().toString() != "") {
-                double percentual = Double.parseDouble(precoAlcool.getText().toString()) / Double.parseDouble(precoGasolina.getText().toString());
-                if (percentual < 0.7) {
-                    resultado.setText("Melhor utilizar álcool - " + percentual);
-                } else {
-                    resultado.setText("Melhor utilizar gasolina - " + percentual);
-                }
-            }else{
-                resultado.setText("Verifique informação do preço da gasolina, pois há inconsistência");
-            }
-        }else{
-            resultado.setText("Verifique informação do preço do álcool, pois há inconsistência");
-        }
- */
     }
-
 
     public boolean validarCampos(String pAlcool, String pGasolina) {
         boolean camposValidados = true;
@@ -71,6 +53,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return camposValidados;
     }
-
 }
 
